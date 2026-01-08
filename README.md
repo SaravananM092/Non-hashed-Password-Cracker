@@ -1,86 +1,109 @@
-# Non-hashed-Password-Cracker
-Non-Hashed Password Cracker is an intentionally vulnerable PHP and MySQL web application created for educational purposes to demonstrate brute-force attacks on plain-text password authentication. The project highlights authentication weaknesses caused by non-hashed password storage and lack of rate limiting.
-🎯 Purpose
+Got it 👍
+Below is a **READY-TO-PASTE README.md** with **important sections in BOLD** and **clean GitHub formatting**.
+You can **directly copy & paste** this into your GitHub **README.md**.
 
-Demonstrate risks of non-hashed password storage
+---
 
-Practice brute-force attacks on login forms
+```md
+# 🔐 **NON-HASHED PASSWORD CRACKER**
 
-Understand OWASP authentication vulnerabilities
+## 📌 **OVERVIEW**
+**Non-Hashed Password Cracker** is an intentionally vulnerable web application created for **educational and training purposes**. This project demonstrates how storing passwords in **plain text (non-hashed)** and lacking basic security controls can lead to **brute-force and authentication attacks**.
 
-Learn why secure password hashing is essential
+---
 
-⚙️ Technologies Used
+## 🎯 **PROJECT PURPOSE**
+- **Demonstrate risks of non-hashed password storage**
+- **Practice brute-force attacks on login forms**
+- **Understand OWASP authentication vulnerabilities**
+- **Learn why secure password hashing is essential**
 
-PHP
+---
 
-MySQL
+## ⚙️ **TECHNOLOGIES USED**
+- **PHP**
+- **MySQL**
+- **Apache (XAMPP)**
+- **HTML**
 
-Apache (XAMPP)
+---
 
-HTML
+## ✨ **FEATURES**
+- **Plain-text password storage (intentionally insecure)**
+- **Vulnerable login authentication**
+- **No rate limiting or account lockout**
+- **Brute-force friendly environment**
+- **Beginner-friendly source code**
 
-✨ Features
+---
 
-Plain-text password storage (intentionally insecure)
+## 📂 **PROJECT STRUCTURE**
+```
 
-Vulnerable login authentication
-
-No rate limiting or account lockout
-
-Suitable for brute-force testing
-
-Simple and beginner-friendly code
-
-📂 Project Structure
 non-hashed-password-cracker/
 │
-├── index.html      # Login page
-├── login.php       # Login validation logic
-├── db.php          # Database connection
-└── success.php     # Success page
+├── index.html      # Login Page
+├── login.php       # Authentication Logic
+├── db.php          # Database Connection
+└── success.php     # Success Page
 
-🚀 How to Use (Setup & Run)
-1️⃣ Download the Project
+````
+
+---
+
+## 🚀 **HOW TO USE (SETUP & RUN)**
+
+### **1️⃣ DOWNLOAD THE PROJECT**
+```bash
 git clone https://github.com/YOUR_USERNAME/non-hashed-password-cracker.git
+````
 
+**OR** download ZIP from GitHub and extract it.
 
-Or download ZIP from GitHub and extract it.
+---
 
-2️⃣ Install Requirements
+### **2️⃣ INSTALL REQUIREMENTS**
 
-Install XAMPP
-https://www.apachefriends.org
+* **Install XAMPP**
+  [https://www.apachefriends.org](https://www.apachefriends.org)
+* **Start Apache and MySQL** from XAMPP Control Panel
 
-Start Apache and MySQL from XAMPP Control Panel
+---
 
-3️⃣ Move Project Files
+### **3️⃣ MOVE PROJECT FILES**
 
 Copy the project folder to:
 
+```
 C:\xampp\htdocs\
-
+```
 
 Example:
 
+```
 C:\xampp\htdocs\non-hashed-password-cracker
+```
 
-4️⃣ Create Database
+---
 
-Open:
+### **4️⃣ CREATE DATABASE**
 
+1. Open:
+
+```
 http://localhost/phpmyadmin
+```
 
+2. Create database:
 
-Create database:
-
+```
 bruteforce_lab
+```
 
+3. Select the database → **SQL TAB**
+4. Paste and run:
 
-Select the database → SQL tab
-
-Run:
-
+```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50),
@@ -90,53 +113,88 @@ CREATE TABLE users (
 INSERT INTO users (username, password) VALUES
 ('admin', 'admin'),
 ('admin1', 'saravanan');
+```
 
-5️⃣ Configure Database Connection
+---
 
-Edit db.php if needed:
+### **5️⃣ CONFIGURE DATABASE CONNECTION**
 
+Open **db.php** and verify:
+
+```php
 $conn = mysqli_connect("localhost", "root", "", "bruteforce_lab");
+```
 
-6️⃣ Run the Application
+---
+
+### **6️⃣ RUN THE APPLICATION**
 
 Open browser:
 
+```
 http://localhost/non-hashed-password-cracker/index.html
+```
 
-🔑 Test Credentials
-Username	Password
-admin	admin
-admin1	saravanan
+---
 
-Successful login redirects to:
+## 🔑 **TEST CREDENTIALS**
 
-Successfully Hacked 🔓
+| **USERNAME** | **PASSWORD**  |
+| ------------ | ------------- |
+| **admin**    | **admin**     |
+| **admin1**   | **saravanan** |
 
-🧪 Learning Outcomes
+**Successful login redirects to:**
+👉 **Successfully Hacked 🔓**
 
-Understand brute-force login attacks
+---
 
-Identify authentication flaws
+## 🧪 **LEARNING OUTCOMES**
 
-Practice offensive security tools (Hydra, Burp Suite)
+* **Understand brute-force login attacks**
+* **Identify authentication flaws**
+* **Practice penetration testing tools**
+* **Learn importance of password hashing**
 
-Learn importance of password hashing and rate limiting
+---
 
-⚠️ Disclaimer
+## ⚠️ **DISCLAIMER**
 
-This project is strictly for educational purposes only.
-Do NOT deploy this application in production environments.
+> **This project is strictly for educational purposes only.**
+> **Do NOT deploy this application in production environments.**
 
-🧠 Future Improvements
+---
 
-Add password hashing (bcrypt)
+## 🧠 **FUTURE IMPROVEMENTS**
 
-Implement rate limiting
+* **Implement password hashing (bcrypt)**
+* **Add rate limiting**
+* **Account lockout mechanisms**
+* **Prepared statements & input validation**
 
-Add account lockout
+---
 
-Input validation and prepared statements
+## 📜 **LICENSE**
 
-📜 License
+**This project is released for educational and training use only.**
 
-This project is released for educational use only.
+```
+
+---
+
+### ✅ **What to Do Now**
+1. Open your GitHub repo  
+2. Click **README.md → Edit**
+3. **Paste everything above**
+4. Click **Commit changes**
+
+---
+
+If you want next:
+- ⭐ GitHub badges  
+- 💣 Hydra brute-force commands  
+- 📄 Resume-ready project description  
+- 🔐 Secure version README  
+
+Just tell me 👍
+```
