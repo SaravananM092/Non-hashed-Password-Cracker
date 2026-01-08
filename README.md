@@ -1,10 +1,9 @@
-Got it 👍
-Below is a **READY-TO-PASTE README.md** with **important sections in BOLD** and **clean GitHub formatting**.
-You can **directly copy & paste** this into your GitHub **README.md**.
 
----
 
-```md
+
+
+```
+```
 # 🔐 **NON-HASHED PASSWORD CRACKER**
 
 ## 📌 **OVERVIEW**
@@ -26,7 +25,7 @@ You can **directly copy & paste** this into your GitHub **README.md**.
 - **Apache (XAMPP)**
 - **HTML**
 
----
+
 
 ## ✨ **FEATURES**
 - **Plain-text password storage (intentionally insecure)**
@@ -35,7 +34,7 @@ You can **directly copy & paste** this into your GitHub **README.md**.
 - **Brute-force friendly environment**
 - **Beginner-friendly source code**
 
----
+```
 
 ## 📂 **PROJECT STRUCTURE**
 ```
@@ -180,9 +179,9 @@ http://localhost/non-hashed-password-cracker/index.html
 
 ```
 
----
+```
 
-### ✅ **What to Do Now**
+## ✅ **What to Do Now**
 1. Open your GitHub repo  
 2. Click **README.md → Edit**
 3. **Paste everything above**
@@ -190,11 +189,4 @@ http://localhost/non-hashed-password-cracker/index.html
 
 ---
 
-If you want next:
-- ⭐ GitHub badges  
-- 💣 Hydra brute-force commands  
-- 📄 Resume-ready project description  
-- 🔐 Secure version README  
 
-Just tell me 👍
-```
